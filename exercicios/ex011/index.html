@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+
+</head>
+
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente o tamanho do seu navegador.</p>
+    <picture>
+        <!--sempre de cima pra baixo a ordem dos tamahos de imagens, sendo a menor(primeira de cima) para maiores as demaisa a baixo em uma ordem logica de valores-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem fleclixivel">
+    </picture>
+    <h1>Reproduzindo Ádio</h1>
+    <p>Vamos aprender a reproduzir ádios em HTML5</p>
+    <!--abre tag audio e dentro da tag audios os sources em ordem de preferencia de cima para baixo os formatos-->
+    <!--preload  indica se o áudio será pré carreagado ou nao e tem 3 valores o metadata o auto e o none-->
+    <!--controls para aparecer os controles de play na tela-->
+    <!--autoplay faz o audio ser reproduzido automaticamente ao carregar a pagina-->
+    <!--loop faz audio quando acabar recomeçar infinitamente-->
+    <!--por um paragrafo indicando um download caso o navegador nao suporte nenhum dos formatos-->
+    <audio preload="metadata" controls loop>
+        <source src="midia/zydeco-piano-party.mp3" type="audio/mpeg">
+        <source src="midia/zydeco-piano-party.oggvorbis.ogg" type="audio/ogg">
+        <source src="midia/Zydeco Piano Party.m4a" type="audio/m4a">
+        <p>Infelismente seu navegodor não consegue reproduzir áudio.</p>
+        <a href="midia/zydeco-piano-party.mp3" download="zydeco-piano-party.mp3" type="audio/mpeg">Clique aqui para
+            baixar o arquivo
+            MP3</a>
+    </audio>
+
+</body>
+
+</html>

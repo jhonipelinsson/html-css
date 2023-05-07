@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Videos em HTML5</title>
+</head>
+
+<body>
+    <h1>inserindo videos hospedados localmente</h1>
+    <p>Este video está hospedado no mmeu próprio servidor.</p>
+    <!--width para definir a largura do video-->
+    <!--poster para inserir foto de capa do video-->
+    <!--controls para por controles de comando do video sendo cabiveis tambem os parametros que se usa nas imagens ex:autoplay,loop entre outros-->
+    <!--criar tag video e dentro da tag e /tag por os source seguidos da especificaçao do tipo pelo atributo type-->
+    <video width="500" poster="imagem/foto-m.png" controls>
+        <source src="midia/Roman-Web720.mp4" type="video/mp4">
+        <source src="midia/Roman-Web720.mkv" type="video/mkv">
+        <source src="midia/Roman-web720.webm" type="video/webm">
+        <!--por um paragrafo que indique um download do video em quetão caso nenhum dos formatos sejam suportados pelo navegador do usúario-->
+        <p>Seu navegador não tem compatibilidade com reprodução de <a href="midia/Roman-Web720.mp4">Clique aqui</a>para
+            fazer o download do arquivo MP4</p>
+    </video>
+    <!--desta forma os dados nao seram comsumidos do proprio servidor e sim do you tube-->
+    <!--dica carregar os videos que iram estar no site em um canal do you ube e fazer esta chamada(obs:todos os videos ficaram públicos no you tube)-->
+    <h1>Inserindo videos do YouTube</h1>
+    <!--pesquisar sobre ifreme e atributos dele-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+</body>
+
+</html>

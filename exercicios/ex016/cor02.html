@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradientes em CSS</title>
+    <style>
+        * {
+            /*configuracoes globais das CSS*/
+            height: 100%;
+        }
+
+        body {
+            /*background-image serve para por imagens ou gradiente(degrade) sendo possivel dois valores nesse atributo o linear e o radial*/
+            /* ex:(radial) = background-image: radial-gradient(circle, #AD514C, #F3FAA0, #FA8C87, #6EB7FA, #5583AD);
+            background-attachment: fixed;*/
+            /*tambem podendo por porcentagem de oucupaxao da cor no display ex: (background-image: linear-gradient(#0000ff 10%,))*/
+            background-image: linear-gradient(-45deg, #0edce07c, #576ac38b, #a97ea64a);
+            background-attachment: fixed;
+        }
+        h1 {
+            color: rgb(43, 52, 52);
+        }
+    </style>
+</head>
+
+<body>
+    <h1><code>Testando gradinte</code></h1>
+
+</body>
+
+</html>
